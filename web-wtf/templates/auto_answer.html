@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h4>Surname {{ surname }}</h4>
+<h4>Surname: {{ surname }}</h4>
+<h4>Name: {{ name }}</h4>
+<h4>Email: {{ email }}</h4>
+<h4>Education: {{ education }}</h4>
+<h4>Profession:</h4>
+{% for prof in profession %}
+<h4>{{ prof }}</h4>
+{% endfor %}
+<h4>Motivation: {{ motivation }}</h4>
+<h4>Sex: {{ sex }}</h4>
+<h4>Ready: {{ ready }}</h4>
+{% endblock %}
